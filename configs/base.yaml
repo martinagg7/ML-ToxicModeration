@@ -1,0 +1,15 @@
+# Training configuration for src/train_distilbert.py.
+# Edit a value here, or override it at launch: python src/train_distilbert.py --learning_rate 3e-5
+# The comment next to each value lists its options.
+
+model_name: distilbert/distilbert-base-uncased   # [distilbert/distilbert-base-uncased, distilbert/distilbert-base-cased]
+max_length: 128                                  # [128, 256]
+train_size: null                                 # [null (all), 20000 (smoke test), 100000]
+learning_rate: 2.0e-5                            # [2e-5, 3e-5, 5e-5, 1e-3 (frozen encoder)]
+batch_size: 16                                   # [16, 32] check GPU VRAM
+epochs: 4                                        # [2, 3, 4]
+best_metric: pr_auc                              # [pr_auc, auc, f1] picks the best epoch
+weight_decay: 0.01
+warmup: 0.1
+freeze_encoder: false                            # [false (full fine-tuning), true (only the classifier MLP)]
+seed: 42

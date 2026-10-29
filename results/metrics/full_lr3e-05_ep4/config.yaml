@@ -1,0 +1,13 @@
+model_name: distilbert/distilbert-base-uncased
+max_length: 128
+train_size: null
+learning_rate: 3.0e-05
+batch_size: 16
+epochs: 4
+best_metric: pr_auc
+weight_decay: 0.01
+warmup: 0.1
+freeze_encoder: false
+seed: 42
+run_name: full_lr3e-05_ep4
+training_minutes: 198.6

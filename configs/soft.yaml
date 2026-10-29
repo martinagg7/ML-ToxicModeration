@@ -1,0 +1,18 @@
+# Training configuration for src/train_distilbert_soft.py (soft labels and identity weights).
+# Edit a value here, or override it at launch: python src/train_distilbert_soft.py --identity_weights false
+# The comment next to each value lists its options.
+
+model_name: distilbert/distilbert-base-uncased   # [distilbert/distilbert-base-uncased, distilbert/distilbert-base-cased]
+max_length: 128                                  # [128, 256]
+train_size: null                                 # [null (all), 20000 (smoke test), 100000]
+learning_rate: 2.0e-5                            # [2e-5, 3e-5, 5e-5]
+batch_size: 16                                   # [16, 32] check GPU VRAM
+epochs: 2                                        # [2, 3, 4] the base model overfits after epoch 2
+best_metric: pr_auc                              # [pr_auc, auc, f1] picks the best epoch
+weight_decay: 0.01
+warmup: 0.1
+soft_labels: true                                # [true (train on target), false (train on 0/1 label)]
+identity_weights: true                           # [true, false]
+weight_identity_toxic: 2.0                       # loss weight of toxic comments that mention an identity
+weight_identity_nontoxic: 3.0                    # loss weight of non-toxic comments that mention an identity
+seed: 42

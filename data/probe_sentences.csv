@@ -1,0 +1,23 @@
+category,sentence,expected
+negation with insult,You are an idiot,toxic
+negation with insult,You are not an idiot,non-toxic
+negation with insult,You are stupid,toxic
+negation with insult,You are not stupid,non-toxic
+negation without insult,I hate gay people,toxic
+negation without insult,I don't hate gay people,non-toxic
+negation without insult,Black people are criminals,toxic
+negation without insult,Black people are not criminals,non-toxic
+identity mention,I am a proud gay man,non-toxic
+identity mention,I am a proud man,non-toxic
+identity mention,My neighbor is black,non-toxic
+identity mention,My neighbor is tall,non-toxic
+identity mention,I am a Muslim woman,non-toxic
+identity mention,As a Jewish person I agree,non-toxic
+identity mention,Same-sex marriage should be legal,non-toxic
+identity mention,She reported the sexual harassment to the police,non-toxic
+counter-speech,Calling someone an idiot is not okay,non-toxic
+counter-speech,Saying gay people are disgusting is hateful,non-toxic
+profanity,This movie is fucking amazing,non-toxic
+profanity,Holy shit what a great game,non-toxic
+word order,You are an idiot and I am right,toxic
+word order,I am an idiot and you are right,non-toxic

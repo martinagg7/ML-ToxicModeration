@@ -1,0 +1,16 @@
+model_name: distilbert/distilbert-base-uncased
+max_length: 128
+train_size: null
+learning_rate: 2.0e-05
+batch_size: 16
+epochs: 2
+best_metric: pr_auc
+weight_decay: 0.01
+warmup: 0.1
+soft_labels: true
+identity_weights: true
+weight_identity_toxic: 2.0
+weight_identity_nontoxic: 3.0
+seed: 42
+run_name: soft_idw_lr2e-05_ep2
+training_minutes: 100.9

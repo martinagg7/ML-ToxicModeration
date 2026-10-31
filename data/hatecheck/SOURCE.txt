@@ -1,0 +1,6 @@
+HateCheck: Functional Tests for Hate Speech Detection Models (Röttger et al., 2021)
+File: test_suite_cases.csv (3,728 test cases, 29 functionalities, 7 target identities)
+Downloaded on 2026-10-31 from:
+https://raw.githubusercontent.com/paul-rottger/hatecheck-data/main/test_suite_cases.csv
+Repository: https://github.com/paul-rottger/hatecheck-data (CC BY 4.0)
+Used for evaluation only.

@@ -1,8 +1,7 @@
-¡--extra-index-url https://download.pytorch.org/whl/cpu
-torch==2.5.1
-transformers==4.46.3
-huggingface_hub==0.26.2
-numpy<2
+--extra-index-url https://download.pytorch.org/whl/cpu
+torch
+transformers==5.21.0
+huggingface_hub<2
 scikit-learn==1.9.1
 joblib
 pandas
